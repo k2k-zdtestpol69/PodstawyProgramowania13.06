@@ -24,4 +24,8 @@ public class Car {
             public void StartEngine() {
                 System.out.println("Silnik "+ this.manufacturer + " " + this.model +" został uruchomiony.");
             }
+
+            public void StopEngine() {
+                System.out.println("Silnik "+ this.manufacturer + " " + this.model +" został zwolniony o ");
+            }
 }
