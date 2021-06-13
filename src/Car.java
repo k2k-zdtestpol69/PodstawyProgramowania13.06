@@ -2,12 +2,12 @@ import javax.swing.*;
 import java.sql.SQLOutput;
 
 public class Car {
-    public String color;
-    public String model;
-    public String manufacturer;
-    public String makeYear;
-    public String fuelType;
-    public boolean engine = true;
+            public String color;
+            public String model;
+            public String manufacturer;
+            public String makeYear;
+            public String fuelType;
+            public boolean engine = true;
 
 
             public Car() {
@@ -31,11 +31,16 @@ public class Car {
                 System.out.println("Silnik "+ this.manufacturer + " " + this.model +" został uruchomiony.");
             }
 
-            public void StopEngine(int percentageOfEngine) {
+
+    /**
+     *
+     * @param percentageOfEngine parametr ustawiający pracę silnika, wartości w integer
+     */
+    public void StopEngine(int percentageOfEngine) {
                 System.out.println("Silnik "+ this.manufacturer + " " + this.model +" został zwolniony o " + percentageOfEngine + "%.");
                     if (percentageOfEngine == 100) {
                         engine = false;
                         System.out.println("Silnik został zatrzymany całkowicie!");
                     }
             }
-            }
+}
