@@ -3,6 +3,7 @@ public class Main {
         System.out.println("Hello World!");
         System.out.println("Cześć Adam");
 
-        new Car();
+        Car Opel = new Car();
+
     }
 }
