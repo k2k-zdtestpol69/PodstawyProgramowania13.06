@@ -5,7 +5,7 @@ public class Car {
             public String color;
             public String model;
             public String manufacturer;
-            public String makeYear;
+            public int makeYear;
             public String fuelType;
             public boolean engine = true;
             public int engineCapacity;
@@ -15,7 +15,7 @@ public class Car {
 
             public Car() {}
 
-            public Car(String manufacturer, String model, String color, String makeYear, String fuelType) {
+            public Car(String manufacturer, String model, String color, int makeYear, String fuelType) {
                 this.model = model;
                 this.makeYear = makeYear;
                 this.manufacturer = manufacturer;
@@ -55,5 +55,15 @@ public class Car {
 
     public void calculateMaximumSpeed() {
         System.out.println(this.doorNumber*this.engineCapacity/this.tyrePressure);
+    }
+
+    public void checkIfFrom2000(){
+        if (this.makeYear > 2000) {
+            System.out.println("Skoro jest nowszy od 2000 roku to kupuję.");
+        }
+        else
+        {
+            System.out.println("Takich badziewi starych to ja nie kupię.");
+        }
     }
 }
