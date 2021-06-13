@@ -8,7 +8,7 @@ public class Main {
 
         Kia.StartEngine();
 
-        Kia.StopEngine("50");
+        Kia.StopEngine(100);
 
         Opel.StartEngine();
 
