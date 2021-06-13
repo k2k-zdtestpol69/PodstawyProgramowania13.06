@@ -4,6 +4,11 @@ public class Main {
         System.out.println("Cześć Adam");
 
         Car Opel = new Car();
+        Car Kia = new Car("Kia","ceed","srebrny","2018","petrol");
+
+        Kia.StartEngine();
+
+        Opel.StartEngine();
 
     }
 }
