@@ -8,10 +8,13 @@ public class Car {
             public String makeYear;
             public String fuelType;
             public boolean engine = true;
+            public int engineCapacity;
+            public double tyrePressure;
+            public int doorNumber;
 
 
-            public Car() {
-            }
+            public Car() {}
+
             public Car(String manufacturer, String model, String color, String makeYear, String fuelType) {
                 this.model = model;
                 this.makeYear = makeYear;
@@ -26,10 +29,16 @@ public class Car {
                 this.fuelType = fuelType;
             }
 
-            public void StartEngine() {
-                engine = true;
-                System.out.println("Silnik "+ this.manufacturer + " " + this.model +" został uruchomiony.");
+            public Car(int engineCapacity, double tyrePressure, int doorNumber) {
+                this.engineCapacity = engineCapacity;
+                this.tyrePressure = tyrePressure;
+                this.doorNumber = doorNumber;
             }
+
+    public void StartEngine() {
+        engine = true;
+        System.out.println("Silnik "+ this.manufacturer + " " + this.model +" został uruchomiony.");
+    }
 
 
     /**
@@ -43,4 +52,8 @@ public class Car {
                         System.out.println("Silnik został zatrzymany całkowicie!");
                     }
             }
+
+    public void calculateMaximumSpeed() {
+        System.out.println(this.doorNumber*this.engineCapacity/this.tyrePressure);
+    }
 }
