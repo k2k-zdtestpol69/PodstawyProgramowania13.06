@@ -5,6 +5,7 @@ public class Car {
     public String makeYear;
     public String fuelType;
 
+
             public Car() {
             }
             public Car(String manufacturer, String model, String color, String makeYear, String fuelType) {
@@ -25,7 +26,7 @@ public class Car {
                 System.out.println("Silnik "+ this.manufacturer + " " + this.model +" został uruchomiony.");
             }
 
-            public void StopEngine() {
-                System.out.println("Silnik "+ this.manufacturer + " " + this.model +" został zwolniony o ");
+            public void StopEngine(String percentageOfEngine) {
+                System.out.println("Silnik "+ this.manufacturer + " " + this.model +" został zwolniony o " + percentageOfEngine + "%.");
             }
 }
