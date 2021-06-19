@@ -36,7 +36,7 @@ public class Main {
 //        Jawa.changeCurrencyToUSD(4.5);
 //        Jawa.getPrice();
 
-        ArrayList<Car> CarsTable = new ArrayList<>();
+//        ArrayList<Car> CarsTable = new ArrayList<>();
 //        CarsTable.add(Toyota);
 //        CarsTable.add(Kia);
 //        CarsTable.add(Polonez2);
@@ -51,5 +51,17 @@ public class Main {
 //        pojazdy.tableChecker(CarsTable);
         Mechanic serwisant1 = new Mechanic("Stefan", "Blacharski", 3000, "blacharz");
         Accountant ksiegowa1 = new Accountant("Lidia", "Rachmistrz", 4000, 4);
+
+        Motorcycle Kawasaki = new Motorcycle("Kawasaki", 4000, "ZX", 0.6, 1991, 'S');
+        Motorcycle Suzuki = new Motorcycle("Suzuki", 6000, "GS", 0.5, 2004, 'S');
+        Motorcycle Honda = new Motorcycle("Honda", 9000, "CBR", 0.125, 2007, 'M' );
+
+        ArrayList<Motorcycle> motorcyclesTable = new ArrayList<>();
+
+        motorcyclesTable.add(Kawasaki);
+        motorcyclesTable.add(Suzuki);
+        motorcyclesTable.add(Honda);
+        pojazdy.motorcycleCheck(motorcyclesTable);
+
     }
 }
