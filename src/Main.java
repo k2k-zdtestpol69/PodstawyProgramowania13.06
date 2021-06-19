@@ -5,9 +5,9 @@ public class Main {
     public static void main(String[] args) {
 //          ** Constructing Cars
         Car Opel = new Car();
-        Car Kia = new Car("Kia","ceed","srebrny",2018,"petrol");
+        Car Kia = new Car("Kia", "ceed", "srebrny", 2018, "petrol");
         Car Polonez = new Car(80, 2.0, 5);
-        Car Polonez2 = new Car("FSO","Polonez","różowy",1980,"uranium");
+        Car Polonez2 = new Car("FSO", "Polonez", "różowy", 1980, "uranium");
         Car Toyota = new Car("Toyota", "Prius", "niebieski", 2010, "petrol");
         Car Mazda = new Car("Mazda", "CX3", "czarny", 2020, "diesel");
 
@@ -37,15 +37,19 @@ public class Main {
 //        Jawa.getPrice();
 
         ArrayList<Car> CarsTable = new ArrayList<>();
-        CarsTable.add(Toyota);
-        CarsTable.add(Kia);
-        CarsTable.add(Polonez2);
-        CarsTable.add(Mazda);
-        CarsTable.add(Polonez);
-        CarsTable.remove(0);
-
-        CarsTable.get(2);
-        CarsTable.clear();
-        CarsTable.isEmpty();
+//        CarsTable.add(Toyota);
+//        CarsTable.add(Kia);
+//        CarsTable.add(Polonez2);
+//        CarsTable.add(Mazda);
+//        CarsTable.add(Polonez);
+//        CarsTable.remove(0);
+//
+//        CarsTable.get(2);
+//        CarsTable.clear();
+//        CarsTable.isEmpty();
+        Vehicle pojazdy = new Vehicle();
+//        pojazdy.tableChecker(CarsTable);
+        Mechanic serwisant1 = new Mechanic("Stefan", "Blacharski", 3000, "blacharz");
+        Accountant ksiegowa1 = new Accountant("Lidia", "Rachmistrz", 4000, 4);
     }
 }

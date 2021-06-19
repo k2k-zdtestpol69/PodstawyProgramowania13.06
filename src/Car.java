@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.sql.SQLOutput;
 import java.util.ArrayList;
 
-public class Car {
+public class Car extends Vehicle {
             public String color;
             public String model;
             public String manufacturer;
