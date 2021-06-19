@@ -21,12 +21,16 @@ public class Main {
 //        Kia.checkIfFrom2000();
 
         Motorcycle Jawa = new Motorcycle("Jawa", 3000, "350", 0.350, 1970, 'S');
-        Jawa.getPrice();
-        Jawa.setPrice(4100);
-        Jawa.getPrice();
-        Jawa.printMotorcycleInfo();
-        Jawa.setManufacturerMoto("BMW");
-        Jawa.priceBMWUpgrade();
+//        Jawa.getPrice();
+//        Jawa.setPrice(4100);
+//        Jawa.getPrice();
+//        Jawa.printMotorcycleInfo();
+//        Jawa.setManufacturerMoto("BMW");
+//        Jawa.priceBMWUpgrade();
+//        Jawa.getPrice();
+//        Jawa.motorcycleInRangePrintOut();
+
+        Jawa.changeCurrencyToUSD(4.5);
         Jawa.getPrice();
 
 

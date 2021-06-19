@@ -81,4 +81,17 @@ public class Motorcycle {
             return false;
         }
     }
+
+    public void motorcycleInRangePrintOut() {
+        if (this.price >= 10000 && this.price <= 20000) {
+            System.out.println("Cena motocykla jest w przedziale od 10 do 20k PLN");
+        }
+        {
+            System.out.println("Cena motocykla jest spoza przedziału 10-20k PLN");
+        }
+    }
+
+    public double changeCurrencyToUSD(double dolarPrice) {
+        return this.price *= dolarPrice;
+    }
 }
