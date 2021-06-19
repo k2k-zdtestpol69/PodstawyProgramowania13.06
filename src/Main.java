@@ -1,4 +1,5 @@
 import java.sql.SQLOutput;
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
@@ -7,6 +8,8 @@ public class Main {
         Car Kia = new Car("Kia","ceed","srebrny",2018,"petrol");
         Car Polonez = new Car(80, 2.0, 5);
         Car Polonez2 = new Car("FSO","Polonez","różowy",1980,"uranium");
+        Car Toyota = new Car("Toyota", "Prius", "niebieski", 2010, "petrol");
+        Car Mazda = new Car("Mazda", "CX3", "czarny", 2020, "diesel");
 
 //        Kia.StartEngine();
 //
@@ -30,9 +33,19 @@ public class Main {
 //        Jawa.getPrice();
 //        Jawa.motorcycleInRangePrintOut();
 
-        Jawa.changeCurrencyToUSD(4.5);
-        Jawa.getPrice();
+//        Jawa.changeCurrencyToUSD(4.5);
+//        Jawa.getPrice();
 
+        ArrayList<Car> CarsTable = new ArrayList<>();
+        CarsTable.add(Toyota);
+        CarsTable.add(Kia);
+        CarsTable.add(Polonez2);
+        CarsTable.add(Mazda);
+        CarsTable.add(Polonez);
+        CarsTable.remove(0);
 
+        CarsTable.get(2);
+        CarsTable.clear();
+        CarsTable.isEmpty();
     }
 }

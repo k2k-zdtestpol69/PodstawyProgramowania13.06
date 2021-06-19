@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.sql.SQLOutput;
+import java.util.ArrayList;
 
 public class Car {
             public String color;
@@ -66,4 +67,9 @@ public class Car {
             System.out.println("Takich badziewi starych to ja nie kupię.");
         }
     }
+
+    public void checkIfListIsEmpty(ArrayList<Car> tableParam){
+        System.out.println(tableParam.isEmpty());
+        }
 }
+
